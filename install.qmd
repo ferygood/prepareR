@@ -1,0 +1,21 @@
+# Install R and RStudio
+
+If you want to explore by yourself, here are the manuals to install [R](https://cran.r-project.org/mirrors.html) and [RStudio](https://posit.co/download/rstudio-desktop/).
+
+In brief:
+
+## Windows:
+
+1.  Download the current R version for windows here: [R download link (R for windows)](https://cran.rstudio.com/bin/windows/base/R-4.3.2-win.exe) and follow the instructions.
+
+2.  Download RStudio (2023.12.0 version) here: [RStudio download link (windows)](https://download1.rstudio.org/electron/windows/RStudio-2023.12.0-369.exe) and follow the instructions.
+
+## Macs and Linux:
+
+1.  Download the current R version for windows here: [R for macs](https://ftp.fau.de/cran/bin/macosx/big-sur-arm64/base/R-4.3.2-arm64.pkg) \| [R for Ubuntu(Linux)](https://ftp.fau.de/cran/bin/linux/ubuntu) and follow the instructions.
+
+2.  Download RStudio (2023.12.0 version) here: [RStudio for Macs](https://download1.rstudio.org/electron/macos/RStudio-2023.12.0-369.dmg) ,[RStudio for Ubuntu](https://download1.rstudio.org/electron/focal/amd64/rstudio-2023.12.0-369-amd64.deb) and follow the instructions.
+
+after installing R and RStudio, you can test it by opening the RStudio software and type a simple code in the console like:
+
+Next step is to install all pre-request packages for the course.
