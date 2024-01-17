@@ -24,7 +24,7 @@ Next step is to install all pre-requested packages for the course.
 
 Please type the below command in your console one by one:
 
-```{r eval=FALSE}
+```{r eval=FALSE, warning=FALSE}
 # Step1. Install packages from CRAN
 install.packages(c("dplyr", "Seurat", "ggplot2", "wTO", "CoDiNA"))
 
@@ -41,7 +41,7 @@ BiocManager::install(c("DESeq2", "edgeR", "biomaRt", "topGO", "Rgraphviz"))
 
 Check you have R and all packages are available. Try execute the code below in your console in RStudio.
 
-```{r message=FALSE}
+```{r message=FALSE, warning=FALSE}
 library(dplyr)
 library(Seurat)
 library(ggplot2)
