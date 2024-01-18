@@ -31,6 +31,7 @@ install.packages(c("dplyr", "Seurat", "ggplot2", "wTO", "CoDiNA"))
 # Step2. Check if you have BiocManager
 if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
+BiocManager::install(version = "3.18")
 
 # Step3. Install packages from Bioconductor
 BiocManager::install(c("DESeq2", "edgeR", "biomaRt", "topGO", "Rgraphviz"))
