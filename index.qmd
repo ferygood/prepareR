@@ -1,5 +1,7 @@
 # Install R and RStudio
 
+R is the programming language and RStudio is the user interface to let us use R.
+
 If you want to explore by yourself, here are the manuals to install [[**R**]{.underline}](https://cran.r-project.org/mirrors.html) and [[**RStudio**]{.underline}](https://posit.co/download/rstudio-desktop/).
 
 In brief:
@@ -60,3 +62,17 @@ print ("hello world")
 You should get something like this without error:
 
 ![](figures/checkR_RStudio.png)
+
+```{r echo=FALSE}
+# Specify the package names
+package_names <- c("dplyr", "Seurat", "ggplot2", "wTO", "CoDiNA", "DESeq2", "edgeR", "biomaRt", "topGO", "Rgraphviz")
+
+package_names <- sort(package_names)
+
+print("Check your packages version (below is the suggested version).")
+# Print version information for each package
+for (package in package_names) {
+  print(paste0(package, ": ", packageVersion(package)))
+}
+
+```
