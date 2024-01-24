@@ -63,6 +63,12 @@ You should get something like this without error:
 
 ![](figures/checkR_RStudio.png)
 
+You can use `packageVersion("dplyr")`, to check your package version.
+
+```{r}
+packageVersion("dplyr")
+```
+
 ```{r echo=FALSE}
 # Specify the package names
 package_names <- c("dplyr", "Seurat", "ggplot2", "wTO", "CoDiNA", "DESeq2", "edgeR", "biomaRt", "topGO", "Rgraphviz")
