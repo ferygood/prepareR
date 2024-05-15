@@ -1,10 +1,7 @@
 # Install R and RStudio
 
-<<<<<<< HEAD
-=======
 R is the programming language and RStudio is the user interface to let us use R.
 
->>>>>>> refs/remotes/origin/main
 If you want to explore by yourself, here are the manuals to install [[**R**]{.underline}](https://cran.r-project.org/mirrors.html) and [[**RStudio**]{.underline}](https://posit.co/download/rstudio-desktop/).
 
 In brief:
@@ -13,11 +10,7 @@ In brief:
 
 1.  Download the current R version for windows here: [[**R download link (R for windows)**]{.underline}](https://cran.rstudio.com/bin/windows/base/R-4.3.2-win.exe) and follow the instructions.
 
-<<<<<<< HEAD
 2.  Download RStudio here: [[**RStudio download link (windows)**]{.underline}](https://download1.rstudio.org/electron/windows/RStudio-2023.12.0-369.exe) and follow the instructions.
-=======
-2.  Download RStudio (2023.12.0 version) here: [[**RStudio download link (windows)**]{.underline}](https://download1.rstudio.org/electron/windows/RStudio-2023.12.0-369.exe) and follow the instructions.
->>>>>>> refs/remotes/origin/main
 
 ## Macs and Linux:
 
@@ -25,9 +18,6 @@ In brief:
 
 <<<<<<< HEAD
 2.  Download RStudio here: [[**RStudio for Macs**]{.underline}](https://download1.rstudio.org/electron/macos/RStudio-2023.12.0-369.dmg) [**,[RStudio for Ubuntu](https://download1.rstudio.org/electron/focal/amd64/rstudio-2023.12.0-369-amd64.deb)**]{.underline} and follow the instructions.
-=======
-2.  Download RStudio (2023.12.0 version) here: [[**RStudio for Macs**]{.underline}](https://download1.rstudio.org/electron/macos/RStudio-2023.12.0-369.dmg) [**,[RStudio for Ubuntu](https://download1.rstudio.org/electron/focal/amd64/rstudio-2023.12.0-369-amd64.deb)**]{.underline} and follow the instructions.
->>>>>>> refs/remotes/origin/main
 
 after installing R and RStudio, you can test it by opening the RStudio software and type a simple code in the console like:
 
@@ -48,18 +38,6 @@ devtools::install_github("immunogenomics/presto")
 # Step3. Check if you have BiocManager
 if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
-=======
-install.packages(c("dplyr", "Seurat", "ggplot2", "wTO", "CoDiNA"))
-
-# Step2. Check if you have BiocManager
-if (!requireNamespace("BiocManager", quietly = TRUE))
-    install.packages("BiocManager")
-BiocManager::install(version = "3.18")
-
-# Step3. Install packages from Bioconductor
-BiocManager::install(c("DESeq2", "edgeR", "biomaRt", "topGO", "Rgraphviz"))
-
->>>>>>> refs/remotes/origin/main
 ```
 
 ## Check everything is settle
@@ -75,28 +53,12 @@ library(presto)
 packageVersion("dplyr")
 packageVersion("Seurat")
 packageVersion("presto")
-=======
-Check you have R and all packages are available. Try execute the code below in your console in RStudio.
 
-```{r message=FALSE, warning=FALSE}
-library(dplyr)
-library(Seurat)
-library(ggplot2)
-library(wTO)
-library(CoDiNA)
-library(DESeq2)
-library(edgeR)
-library(biomaRt)
-library(topGO)
-library(Rgraphviz)
-
->>>>>>> refs/remotes/origin/main
 print ("hello world")
 ```
 
 You should get something like this without error:
 
-<<<<<<< HEAD
 ![](images/clipboard-3072330616.png)
 
 ## Install Git and login to GitLab
@@ -112,26 +74,3 @@ If you do not have git, go to the [official website](https://git-scm.com/downloa
 Note: window's user might need to use a bash terminal (it will go with the Git dowload) to check your git version (For more info: [here](https://gitforwindows.org/)).
 
 Next, please check if you can login to [FU GitLab](https://git.imp.fu-berlin.de/users/sign_in) using your FU-Account. More detail description can be found [here](https://www.mi.fu-berlin.de/w/IT/GitLab).
-=======
-![](figures/checkR_RStudio.png)
-
-You can use `packageVersion("dplyr")`, to check your package version.
-
-```{r}
-packageVersion("dplyr")
-```
-
-```{r echo=FALSE}
-# Specify the package names
-package_names <- c("dplyr", "Seurat", "ggplot2", "wTO", "CoDiNA", "DESeq2", "edgeR", "biomaRt", "topGO", "Rgraphviz")
-
-package_names <- sort(package_names)
-
-print("Check your packages version (below is the suggested version).")
-# Print version information for each package
-for (package in package_names) {
-  print(paste0(package, ": ", packageVersion(package)))
-}
-
-```
->>>>>>> refs/remotes/origin/main
