@@ -35,6 +35,9 @@ devtools::install_github("immunogenomics/presto")
 # Step3. Check if you have BiocManager
 if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
+
+# Step4. Install hdf5r
+BiocManager::install("hdf5r")
 ```
 
 ## Check everything is settle
@@ -45,17 +48,19 @@ Check you have R and all packages are available for the **correct version**. Try
 library(dplyr)
 library(Seurat)
 library(presto)
+library(hdf5r)
 
 packageVersion("dplyr")
 packageVersion("Seurat")
 packageVersion("presto")
+packageVersion("hdf5r")
 
 print ("hello world")
 ```
 
 You should get something like this without error:
 
-![](images/clipboard-3072330616.png)
+## ![](images/clipboard-2708672261.png)
 
 ## Install Git and login to GitLab
 
