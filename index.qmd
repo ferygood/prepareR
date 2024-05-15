@@ -15,8 +15,7 @@ In brief:
 ## Macs and Linux:
 
 1.  Download the current R version for windows here: [[**R for macs**]{.underline}](https://ftp.fau.de/cran/bin/macosx/big-sur-arm64/base/R-4.4.0-arm64.pkg) [**\| [R for Ubuntu(Linux)](https://ftp.fau.de/cran/bin/linux/ubuntu)**]{.underline} and follow the instructions.
-
-\<\<\<\<\<\<\< HEAD 2. Download RStudio here: [[**RStudio for Macs**]{.underline}](https://download1.rstudio.org/electron/macos/RStudio-2024.04.1-748.dmg) [**,[RStudio for Ubuntu](https://download1.rstudio.org/electron/focal/amd64/rstudio-2024.04.1-748-amd64.deb)**]{.underline} and follow the instructions.
+2.  Download RStudio here: [[**RStudio for Macs**]{.underline}](https://download1.rstudio.org/electron/macos/RStudio-2024.04.1-748.dmg) [**,[RStudio for Ubuntu](https://download1.rstudio.org/electron/focal/amd64/rstudio-2024.04.1-748-amd64.deb)**]{.underline} and follow the instructions.
 
 after installing R and RStudio, you can test it by opening the RStudio software and type a simple code in the console like:
 
