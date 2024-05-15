@@ -8,16 +8,15 @@ In brief:
 
 ## Windows:
 
-1.  Download the current R version for windows here: [[**R download link (R for windows)**]{.underline}](https://cran.rstudio.com/bin/windows/base/R-4.3.2-win.exe) and follow the instructions.
+1.  Download the current R version for windows here: [[**R download link (R for windows)**]{.underline}](https://cran.rstudio.com/bin/windows/base/R-4.4.0-win.exe) and follow the instructions.
 
-2.  Download RStudio here: [[**RStudio download link (windows)**]{.underline}](https://download1.rstudio.org/electron/windows/RStudio-2023.12.0-369.exe) and follow the instructions.
+2.  Download RStudio here: [[**RStudio download link (windows)**]{.underline}](https://download1.rstudio.org/electron/windows/RStudio-2024.04.1-748.exe) and follow the instructions.
 
 ## Macs and Linux:
 
-1.  Download the current R version for windows here: [[**R for macs**]{.underline}](https://ftp.fau.de/cran/bin/macosx/big-sur-arm64/base/R-4.3.2-arm64.pkg) [**\| [R for Ubuntu(Linux)](https://ftp.fau.de/cran/bin/linux/ubuntu)**]{.underline} and follow the instructions.
+1.  Download the current R version for windows here: [[**R for macs**]{.underline}](https://ftp.fau.de/cran/bin/macosx/big-sur-arm64/base/R-4.4.0-arm64.pkg) [**\| [R for Ubuntu(Linux)](https://ftp.fau.de/cran/bin/linux/ubuntu)**]{.underline} and follow the instructions.
 
-<<<<<<< HEAD
-2.  Download RStudio here: [[**RStudio for Macs**]{.underline}](https://download1.rstudio.org/electron/macos/RStudio-2023.12.0-369.dmg) [**,[RStudio for Ubuntu](https://download1.rstudio.org/electron/focal/amd64/rstudio-2023.12.0-369-amd64.deb)**]{.underline} and follow the instructions.
+\<\<\<\<\<\<\< HEAD 2. Download RStudio here: [[**RStudio for Macs**]{.underline}](https://download1.rstudio.org/electron/macos/RStudio-2024.04.1-748.dmg) [**,[RStudio for Ubuntu](https://download1.rstudio.org/electron/focal/amd64/rstudio-2024.04.1-748-amd64.deb)**]{.underline} and follow the instructions.
 
 after installing R and RStudio, you can test it by opening the RStudio software and type a simple code in the console like:
 
@@ -29,7 +28,6 @@ Please type the below command in your console one by one:
 
 ```{r eval=FALSE, warning=FALSE}
 # Step1. Install packages from CRAN
-<<<<<<< HEAD
 install.packages(c("dplyr", "Seurat", "devtools"))
 
 # Step2. Install presto
@@ -42,7 +40,6 @@ if (!requireNamespace("BiocManager", quietly = TRUE))
 
 ## Check everything is settle
 
-<<<<<<< HEAD
 Check you have R and all packages are available for the **correct version**. Try execute the code below in your console in RStudio.
 
 ```{r message=FALSE, warning=FALSE, echo=FALSE}

@@ -2,11 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<<<<<<< HEAD
 <meta name="generator" content="quarto-1.4.549">
-=======
-<meta name="generator" content="quarto-1.3.353">
->>>>>>> refs/remotes/origin/main
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -92,16 +88,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="windows" class="level2">
 <h2 class="anchored" data-anchor-id="windows">Windows:</h2>
 <ol type="1">
-<li><p>Download the current R version for windows here: <a href="https://cran.rstudio.com/bin/windows/base/R-4.3.2-win.exe"><u><strong>R download link (R for windows)</strong></u></a> and follow the instructions.</p></li>
-<li><p>Download RStudio here: <a href="https://download1.rstudio.org/electron/windows/RStudio-2023.12.0-369.exe"><u><strong>RStudio download link (windows)</strong></u></a> and follow the instructions.</p></li>
+<li><p>Download the current R version for windows here: <a href="https://cran.rstudio.com/bin/windows/base/R-4.4.0-win.exe"><u><strong>R download link (R for windows)</strong></u></a> and follow the instructions.</p></li>
+<li><p>Download RStudio here: <a href="https://download1.rstudio.org/electron/windows/RStudio-2024.04.1-748.exe"><u><strong>RStudio download link (windows)</strong></u></a> and follow the instructions.</p></li>
 </ol>
 </section>
 <section id="macs-and-linux" class="level2">
 <h2 class="anchored" data-anchor-id="macs-and-linux">Macs and Linux:</h2>
 <ol type="1">
-<li><p>Download the current R version for windows here: <a href="https://ftp.fau.de/cran/bin/macosx/big-sur-arm64/base/R-4.3.2-arm64.pkg"><u><strong>R for macs</strong></u></a> <u><strong>| <a href="https://ftp.fau.de/cran/bin/linux/ubuntu">R for Ubuntu(Linux)</a></strong></u> and follow the instructions.</p></li>
-<li><p>Download RStudio here: <a href="https://download1.rstudio.org/electron/macos/RStudio-2023.12.0-369.dmg"><u><strong>RStudio for Macs</strong></u></a> <u><strong>,<a href="https://download1.rstudio.org/electron/focal/amd64/rstudio-2023.12.0-369-amd64.deb">RStudio for Ubuntu</a></strong></u> and follow the instructions.</p></li>
+<li>Download the current R version for windows here: <a href="https://ftp.fau.de/cran/bin/macosx/big-sur-arm64/base/R-4.4.0-arm64.pkg"><u><strong>R for macs</strong></u></a> <u><strong>| <a href="https://ftp.fau.de/cran/bin/linux/ubuntu">R for Ubuntu(Linux)</a></strong></u> and follow the instructions.</li>
 </ol>
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD 2. Download RStudio here: <a href="https://download1.rstudio.org/electron/macos/RStudio-2024.04.1-748.dmg"><u><strong>RStudio for Macs</strong></u></a> <u><strong>,<a href="https://download1.rstudio.org/electron/focal/amd64/rstudio-2024.04.1-748-amd64.deb">RStudio for Ubuntu</a></strong></u> and follow the instructions.</p>
 <p>after installing R and RStudio, you can test it by opening the RStudio software and type a simple code in the console like:</p>
 <p>Next step is to install all pre-requested packages for the course.</p>
 </section>
@@ -112,22 +108,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Step1. Install packages from CRAN</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"dplyr"</span>, <span class="st">"Seurat"</span>, <span class="st">"devtools"</span>))</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<<<<<<< HEAD
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Step2. Install presto</span></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"immunogenomics/presto"</span>)</span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Step3. Check if you have BiocManager</span></span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">requireNamespace</span>(<span class="st">"BiocManager"</span>, <span class="at">quietly =</span> <span class="cn">TRUE</span>))</span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">install.packages</span>(<span class="st">"BiocManager"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-=======
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Step2. Check if you have BiocManager</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">requireNamespace</span>(<span class="st">"BiocManager"</span>, <span class="at">quietly =</span> <span class="cn">TRUE</span>))</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">install.packages</span>(<span class="st">"BiocManager"</span>)</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>BiocManager<span class="sc">::</span><span class="fu">install</span>(<span class="at">version =</span> <span class="st">"3.18"</span>)</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Step3. Install packages from Bioconductor</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>BiocManager<span class="sc">::</span><span class="fu">install</span>(<span class="fu">c</span>(<span class="st">"DESeq2"</span>, <span class="st">"edgeR"</span>, <span class="st">"biomaRt"</span>, <span class="st">"topGO"</span>, <span class="st">"Rgraphviz"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
->>>>>>> refs/remotes/origin/main
 </div>
 </section>
 <section id="check-everything-is-settle" class="level2">
@@ -148,7 +134,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p>You should get something like this without error:</p>
-<<<<<<< HEAD
 <p><img src="images/clipboard-3072330616.png" class="img-fluid"></p>
 </section>
 <section id="install-git-and-login-to-gitlab" class="level2">
@@ -159,33 +144,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><img src="images/clipboard-918999991.png" class="img-fluid"></p>
 <p>Note: window’s user might need to use a bash terminal (it will go with the Git dowload) to check your git version (For more info: <a href="https://gitforwindows.org/">here</a>).</p>
 <p>Next, please check if you can login to <a href="https://git.imp.fu-berlin.de/users/sign_in">FU GitLab</a> using your FU-Account. More detail description can be found <a href="https://www.mi.fu-berlin.de/w/IT/GitLab">here</a>.</p>
-=======
-<p><img src="figures/checkR_RStudio.png" class="img-fluid"></p>
-<p>You can use <code>packageVersion("dplyr")</code>, to check your package version.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">packageVersion</span>(<span class="st">"dplyr"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] '1.1.4'</code></pre>
-</div>
-</div>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "Check your packages version (below is the suggested version)."</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "biomaRt: 2.58.0"
-[1] "CoDiNA: 1.1.2"
-[1] "DESeq2: 1.42.0"
-[1] "dplyr: 1.1.4"
-[1] "edgeR: 4.0.9"
-[1] "ggplot2: 3.4.4"
-[1] "Rgraphviz: 2.46.0"
-[1] "Seurat: 5.0.1"
-[1] "topGO: 2.54.0"
-[1] "wTO: 2.0.2"</code></pre>
-</div>
-</div>
->>>>>>> refs/remotes/origin/main
 </section>
 </section>
 
