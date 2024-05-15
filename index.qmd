@@ -42,7 +42,7 @@ if (!requireNamespace("BiocManager", quietly = TRUE))
 
 Check you have R and all packages are available for the **correct version**. Try execute the code below in your console in RStudio.
 
-```{r message=FALSE, warning=FALSE, echo=FALSE}
+```{r message=FALSE, warning=FALSE, echo=FALSE, eval=FALSE}
 library(dplyr)
 library(Seurat)
 library(presto)
