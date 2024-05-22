@@ -27,7 +27,7 @@ Please type the below command in your console one by one:
 
 ```{r eval=FALSE, warning=FALSE}
 # Step1. Install packages from CRAN
-install.packages(c("dplyr", "Seurat", "devtools"))
+install.packages(c("dplyr", "Seurat", "devtools", "rmarkdown"))
 
 # Step2. Install presto
 devtools::install_github("immunogenomics/presto")
