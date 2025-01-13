@@ -1,0 +1,1 @@
+Sitemap: https://ferygood.github.io/prepareR/sitemap.xml
