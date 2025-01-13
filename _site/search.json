@@ -14,8 +14,8 @@
     "text": "Download the current R version for windows here: R download link (R for windows) and follow the instructions.\nDownload RStudio here: RStudio download link (windows) and follow the instructions."
   },
   {
-    "objectID": "index.html#macs-and-linux",
-    "href": "index.html#macs-and-linux",
+    "objectID": "index.html#macos-and-linux",
+    "href": "index.html#macos-and-linux",
     "title": "Install R, RStudio, and R packages",
     "section": "",
     "text": "Download the current R version for windows here: R for macOS (M1,2..Chip) | R for macOS (Intel)| R for Ubuntu(Linux) and follow the instructions.\nDownload RStudio here: RStudio for macOS, ,RStudio for Ubuntu and follow the instructions.\n\nafter installing R and RStudio, you can test it by opening the RStudio software and type a simple code in the console like:\nNext step is to install all pre-requested packages for the course."
