@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>index</title>
+<title>Course Instruction</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -57,46 +57,113 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="index_files/libs/clipboard/clipboard.min.js"></script>
-<script src="index_files/libs/quarto-html/quarto.js"></script>
-<script src="index_files/libs/quarto-html/popper.min.js"></script>
-<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="index_files/libs/quarto-html/anchor.min.js"></script>
-<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="index_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
 
 
 </head>
 
-<body class="fullcontent">
+<body class="nav-fixed fullcontent">
 
-<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
-
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Course Instruction</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text">Introduction</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./images/R-Intro.pdf"> 
+<span class="menu-text">R Tutorial</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
 <main class="content" id="quarto-document-content">
 
 
 
 
-<section id="install-r-and-rstudio" class="level1">
-<h1>Install R and RStudio</h1>
+<section id="install-r-rstudio-and-r-packages" class="level1">
+<h1>Install R, RStudio, and R packages</h1>
 <p>R is the programming language and RStudio is the user interface to let us use R.</p>
 <p>If you want to explore by yourself, here are the manuals to install <a href="https://cran.r-project.org/mirrors.html"><u><strong>R</strong></u></a> and <a href="https://posit.co/download/rstudio-desktop/"><u><strong>RStudio</strong></u></a>.</p>
 <p>In brief:</p>
 <section id="windows" class="level2">
 <h2 class="anchored" data-anchor-id="windows">Windows:</h2>
 <ol type="1">
-<li><p>Download the current R version for windows here: <a href="https://cran.rstudio.com/bin/windows/base/R-4.4.0-win.exe"><u><strong>R download link (R for windows)</strong></u></a> and follow the instructions.</p></li>
-<li><p>Download RStudio here: <a href="https://download1.rstudio.org/electron/windows/RStudio-2024.04.1-748.exe"><u><strong>RStudio download link (windows)</strong></u></a> and follow the instructions.</p></li>
+<li><p>Download the current R version for windows here: <a href="https://cran.rstudio.com/bin/windows/base/R-4.4.2-win.exe"><u><strong>R download link (R for windows)</strong></u></a> and follow the instructions.</p></li>
+<li><p>Download RStudio here: <a href="https://download1.rstudio.org/electron/windows/RStudio-2024.12.0-467.exe"><u><strong>RStudio download link (windows)</strong></u></a> and follow the instructions.</p></li>
 </ol>
 </section>
 <section id="macs-and-linux" class="level2">
 <h2 class="anchored" data-anchor-id="macs-and-linux">Macs and Linux:</h2>
 <ol type="1">
-<li>Download the current R version for windows here: <a href="https://ftp.fau.de/cran/bin/macosx/big-sur-arm64/base/R-4.4.0-arm64.pkg"><u><strong>R for macs</strong></u></a> <u><strong>| <a href="https://ftp.fau.de/cran/bin/linux/ubuntu">R for Ubuntu(Linux)</a></strong></u> and follow the instructions.</li>
-<li>Download RStudio here: <a href="https://download1.rstudio.org/electron/macos/RStudio-2024.04.1-748.dmg"><u><strong>RStudio for Macs</strong></u></a> <u><strong>,<a href="https://download1.rstudio.org/electron/focal/amd64/rstudio-2024.04.1-748-amd64.deb">RStudio for Ubuntu</a></strong></u> and follow the instructions.</li>
+<li>Download the current R version for windows here: <a href="https://cran.rstudio.com/bin/macosx/big-sur-arm64/base/R-4.4.2-arm64.pkg"><strong>R for macOS (M1,2..Chip)</strong></a> | <a href="https://cran.rstudio.com/bin/macosx/big-sur-x86_64/base/R-4.4.2-x86_64.pkg"><strong>R for macOS (Intel)</strong></a><u>| <a href="https://cran.rstudio.com/bin/linux/ubuntu"><strong>R for Ubuntu(Linux)</strong></a></u> and follow the instructions.</li>
+<li>Download RStudio here: <a href="https://download1.rstudio.org/electron/macos/RStudio-2024.12.0-467.dmg"><strong>RStudio for macOS</strong></a>, <u><strong>,<a href="https://download1.rstudio.org/electron/focal/amd64/rstudio-2024.04.1-748-amd64.deb">RStudio for Ubuntu</a></strong></u> and follow the instructions.</li>
 </ol>
 <p>after installing R and RStudio, you can test it by opening the RStudio software and type a simple code in the console like:</p>
 <p>Next step is to install all pre-requested packages for the course.</p>
@@ -115,31 +182,55 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">requireNamespace</span>(<span class="st">"BiocManager"</span>, <span class="at">quietly =</span> <span class="cn">TRUE</span>))</span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">install.packages</span>(<span class="st">"BiocManager"</span>)</span>
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Step4. Install hdf5r</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>BiocManager<span class="sc">::</span><span class="fu">install</span>(<span class="st">"hdf5r"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Step4. Install hdf5r, DESeq2, edgeR</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>BiocManager<span class="sc">::</span><span class="fu">install</span>(<span class="fu">c</span>(<span class="st">"hdf5r"</span>, <span class="st">"DESeq2"</span>, <span class="st">"edgeR"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="check-everything-is-settle" class="level2">
 <h2 class="anchored" data-anchor-id="check-everything-is-settle">Check everything is settle</h2>
-<p>Check you have R and all packages are available for the <strong>correct version</strong>. Try execute the code below in your console in RStudio.</p>
-<p>You should get something like this without error:</p>
+<p>Check you have R and all packages are available for the <strong>correct version</strong>. Try execute the code below in your console in RStudio. You should get something like the content below without error. Try to install the same or at least above versions of the packages.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(Seurat)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(presto)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(hdf5r)</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(DESeq2)</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(edgeR)</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">paste0</span>(<span class="st">"dplyr version: "</span>, <span class="fu">packageVersion</span>(<span class="st">"dplyr"</span>)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "dplyr version: 1.1.4"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">paste0</span>(<span class="st">"Seurat version: "</span>, <span class="fu">packageVersion</span>(<span class="st">"Seurat"</span>)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "Seurat version: 5.1.0"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">paste0</span>(<span class="st">"presto version: "</span>, <span class="fu">packageVersion</span>(<span class="st">"presto"</span>)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "presto version: 1.0.0"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">paste0</span>(<span class="st">"hdf5r version: "</span>, <span class="fu">packageVersion</span>(<span class="st">"hdf5r"</span>)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "hdf5r version: 1.3.11"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">paste0</span>(<span class="st">"DESeq2 version: "</span>, <span class="fu">packageVersion</span>(<span class="st">"DESeq2"</span>)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "DESeq2 version: 1.46.0"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">paste0</span>(<span class="st">"edgeR version: "</span>, <span class="fu">packageVersion</span>(<span class="st">"edgeR"</span>)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "edgeR version: 4.4.1"</code></pre>
+</div>
+</div>
 </section>
 <section id="section" class="level2">
-<h2 class="anchored" data-anchor-id="section"><img src="images/clipboard-2708672261.png" class="img-fluid"></h2>
-</section>
-<section id="install-git-and-login-to-gitlab" class="level2">
-<h2 class="anchored" data-anchor-id="install-git-and-login-to-gitlab">Install Git and login to GitLab</h2>
-<p>For macOS and Linux user, you can check if you already have it one your laptop by typing <code>git --version</code> from your terminal.</p>
-<p><img src="images/clipboard-357840708.png" class="img-fluid"></p>
-<p>If you do not have git, go to the <a href="https://git-scm.com/downloads">official website</a> and follow the instruction to download git for your operating system.</p>
-<p><img src="images/clipboard-918999991.png" class="img-fluid"></p>
-<p>Note: window’s user might need to use a bash terminal (it will go with the Git dowload) to check your git version (For more info: <a href="https://gitforwindows.org/">here</a>).</p>
-<p>Next, please check if you can login to <a href="https://git.imp.fu-berlin.de/users/sign_in">FU GitLab</a> using your FU-Account. More detail description can be found <a href="https://www.mi.fu-berlin.de/w/IT/GitLab">here</a>.</p>
+<h2 class="anchored" data-anchor-id="section"></h2>
+
+
 </section>
 </section>
 
-</main>
-<!-- /main column -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

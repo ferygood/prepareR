@@ -1,4 +1,4 @@
-# Install R and RStudio
+# Install R, RStudio, and R packages
 
 R is the programming language and RStudio is the user interface to let us use R.
 
@@ -8,14 +8,14 @@ In brief:
 
 ## Windows:
 
-1.  Download the current R version for windows here: [[**R download link (R for windows)**]{.underline}](https://cran.rstudio.com/bin/windows/base/R-4.4.0-win.exe) and follow the instructions.
+1.  Download the current R version for windows here: [[**R download link (R for windows)**]{.underline}](https://cran.rstudio.com/bin/windows/base/R-4.4.2-win.exe) and follow the instructions.
 
-2.  Download RStudio here: [[**RStudio download link (windows)**]{.underline}](https://download1.rstudio.org/electron/windows/RStudio-2024.04.1-748.exe) and follow the instructions.
+2.  Download RStudio here: [[**RStudio download link (windows)**]{.underline}](https://download1.rstudio.org/electron/windows/RStudio-2024.12.0-467.exe) and follow the instructions.
 
-## Macs and Linux:
+## macOS and Linux:
 
-1.  Download the current R version for windows here: [[**R for macs**]{.underline}](https://ftp.fau.de/cran/bin/macosx/big-sur-arm64/base/R-4.4.0-arm64.pkg) [**\| [R for Ubuntu(Linux)](https://ftp.fau.de/cran/bin/linux/ubuntu)**]{.underline} and follow the instructions.
-2.  Download RStudio here: [[**RStudio for Macs**]{.underline}](https://download1.rstudio.org/electron/macos/RStudio-2024.04.1-748.dmg) [**,[RStudio for Ubuntu](https://download1.rstudio.org/electron/focal/amd64/rstudio-2024.04.1-748-amd64.deb)**]{.underline} and follow the instructions.
+1.  Download the current R version for windows here: [**R for macOS (M1,2..Chip)**](https://cran.rstudio.com/bin/macosx/big-sur-arm64/base/R-4.4.2-arm64.pkg) \| [**R for macOS (Intel)**](https://cran.rstudio.com/bin/macosx/big-sur-x86_64/base/R-4.4.2-x86_64.pkg)[\| [**R for Ubuntu(Linux)**](https://cran.rstudio.com/bin/linux/ubuntu)]{.underline} and follow the instructions.
+2.  Download RStudio here: [**RStudio for macOS**](https://download1.rstudio.org/electron/macos/RStudio-2024.12.0-467.dmg), [**,[RStudio for Ubuntu](https://download1.rstudio.org/electron/focal/amd64/rstudio-2024.04.1-748-amd64.deb)**]{.underline} and follow the instructions.
 
 after installing R and RStudio, you can test it by opening the RStudio software and type a simple code in the console like:
 
@@ -36,42 +36,28 @@ devtools::install_github("immunogenomics/presto")
 if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
 
-# Step4. Install hdf5r
-BiocManager::install("hdf5r")
+# Step4. Install hdf5r, DESeq2, edgeR
+BiocManager::install(c("hdf5r", "DESeq2", "edgeR"))
 ```
 
 ## Check everything is settle
 
-Check you have R and all packages are available for the **correct version**. Try execute the code below in your console in RStudio.
+Check you have R and all packages are available for the **correct version**. Try execute the code below in your console in RStudio. You should get something like the content below without error. Try to install the same or at least above versions of the packages.
 
-```{r message=FALSE, warning=FALSE, echo=FALSE, eval=FALSE}
+```{r message=FALSE, warning=FALSE}
 library(dplyr)
 library(Seurat)
 library(presto)
 library(hdf5r)
+library(DESeq2)
+library(edgeR)
 
-packageVersion("dplyr")
-packageVersion("Seurat")
-packageVersion("presto")
-packageVersion("hdf5r")
-
-print ("hello world")
+print(paste0("dplyr version: ", packageVersion("dplyr")))
+print(paste0("Seurat version: ", packageVersion("Seurat")))
+print(paste0("presto version: ", packageVersion("presto")))
+print(paste0("hdf5r version: ", packageVersion("hdf5r")))
+print(paste0("DESeq2 version: ", packageVersion("DESeq2")))
+print(paste0("edgeR version: ", packageVersion("edgeR")))
 ```
 
-You should get something like this without error:
-
-## ![](images/clipboard-2708672261.png)
-
-## Install Git and login to GitLab
-
-For macOS and Linux user, you can check if you already have it one your laptop by typing `git --version` from your terminal.
-
-![](images/clipboard-357840708.png)
-
-If you do not have git, go to the [official website](https://git-scm.com/downloads) and follow the instruction to download git for your operating system.
-
-![](images/clipboard-918999991.png)
-
-Note: window's user might need to use a bash terminal (it will go with the Git dowload) to check your git version (For more info: [here](https://gitforwindows.org/)).
-
-Next, please check if you can login to [FU GitLab](https://git.imp.fu-berlin.de/users/sign_in) using your FU-Account. More detail description can be found [here](https://www.mi.fu-berlin.de/w/IT/GitLab).
+## 

@@ -1,0 +1,13 @@
+project: 
+  type: website
+  
+website: 
+  title: "Course Instruction"
+  site-url: "https://ferygood.github.io/prepareR"
+  navbar: 
+    left: 
+      - text: Introduction
+        href: index.qmd
+      - text: R Tutorial
+        href: images/R-Intro.pdf
+        
