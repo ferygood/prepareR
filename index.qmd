@@ -27,7 +27,7 @@ Please type the below command in your console one by one:
 
 ```{r eval=FALSE, warning=FALSE}
 # Step1. Install packages from CRAN
-install.packages(c("dplyr", "Seurat", "devtools", "rmarkdown"))
+install.packages(c("dplyr", "Seurat", "devtools", "rmarkdown", "ggplot2", "ggpubr"))
 
 # Step2. Install presto
 devtools::install_github("immunogenomics/presto")
@@ -42,7 +42,7 @@ BiocManager::install(c("hdf5r", "DESeq2", "edgeR"))
 
 ## Check everything is settle
 
-Check you have R and all packages are available for the **correct version**. Try execute the code below in your console in RStudio. You should get something like the content below without error. Try to install the same or at least above versions of the packages.
+Check you have R and all packages are available for the **correct version**. Try execute the code below in your console in RStudio. You should get something like the content below without error. Try to install the same or later versions of the packages.
 
 ```{r message=FALSE, warning=FALSE}
 library(dplyr)
@@ -51,13 +51,15 @@ library(presto)
 library(hdf5r)
 library(DESeq2)
 library(edgeR)
+library(ggplot2)
+library(ggpubr)
 
-print(paste0("dplyr version: ", packageVersion("dplyr")))
-print(paste0("Seurat version: ", packageVersion("Seurat")))
-print(paste0("presto version: ", packageVersion("presto")))
-print(paste0("hdf5r version: ", packageVersion("hdf5r")))
-print(paste0("DESeq2 version: ", packageVersion("DESeq2")))
-print(paste0("edgeR version: ", packageVersion("edgeR")))
+packages <- c("dplyr", "Seurat", "presto", "hdf5r", 
+              "DESeq2", "edgeR", "ggplot2","ggpubr")
+versions <- sapply(packages, function(pkg) paste0(
+    pkg, " version: ", packageVersion(pkg)))
+cat(versions, sep = "\n")
+
 ```
 
 ## 
